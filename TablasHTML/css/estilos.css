@@ -1,10 +1,35 @@
-th{
-    display: table-cell;
-    vertical-align: inherit;
-    font-weight: bold;
+table{
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 4px;
+}
+
+td {
     text-align: center;
 }
 
-table{
-    border: 1;
+caption{
+    color: red;
+    font-family: serif;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+th{
+    color: beige;
+    background-color: gray;
+}
+
+/*Rengoles pares*/
+tr:nth-child(even){
+    background-color: antiquewhite;
+}
+
+/*Rengoles impares*/
+tr:nth-child(odd){
+    background-color: aliceblue;
 }
